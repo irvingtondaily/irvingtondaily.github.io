@@ -1,1 +1,0 @@
-# irvingtondaily.github.io
