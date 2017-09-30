@@ -43,13 +43,23 @@
                 position: absolute;
             }
             #footer {
-                margin-top: 900px;
+                margin-top: 1420px;
                 margin-left: -10px;
                 width: 100%;
-                height: 120px;
-                background-color: white;
+                height: 110px;
+                background-color: #4CAF50;
                 position: absolute;
-                box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+                
+                font-family: "Cabin", sans-serif;
+            }
+            .footertext {
+                padding: 3px;
+                margin: auto;
+                margin-left: 35px;
+                margin-top: 18px;
+                color: white;
+                font-size: 100%;
             }
             #subTitle {
                 margin-top: 301px;
@@ -116,7 +126,7 @@
             }
             #heading {
                 position: absolute;
-                margin-top: 406px;
+                margin-top: 412px;
                 margin-left: -10px;
                 width: 100%;
                 height: 100px;
@@ -129,12 +139,59 @@
                 margin: auto;
                 position: absolute;
             }
+            .card {
+                position: absolute;
+                margin-left: 8%;
+                width: 80%;
+                height: 200px;
+                background-color: white;
+                font-family: "Cabin", sans-serif;
+                border-radius: 5px;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+            }
+            #article1 {
+                margin-top: 520px;
+            }
+            #article2 {
+                margin-top: 740px;
+            }
+            #article3 {
+                margin-top: 960px;
+            }
+            #article4 {
+                margin-top: 1180px;
+            }
+            .name {
+                font-size: 117%;
+                padding-left: 20px;
+                color: #1B5E20;
+                opacity: 1;
+            }
+            .authordate {
+                font-size: 100%;
+                padding-left: 20px;
+                color: rgb(0, 0, 0);
+                opacity: 0.72;
+            }
+            .text {
+                font-size: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: rgb(0, 0, 0);
+                opacity: 1;
+            }
+            .card:hover {
+                box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+            }
+            .card:active {
+                background-color: #E0E0E0;
+            }
         </style>
     </head>
     <body>
-    
         <div id="footer">
-            
+            <p class="footertext">© 2017 Irvington Daily News</p>
+            <p class="footertext">Contact: irvingtondaily@gmail.com</p>
         </div>
         <div id="subTitle">
             <div class="container">
@@ -170,6 +227,34 @@
                 <p id="topstories">TOP STORIES</p>
             </div>
         </div>
+        <a href="https://www.google.com">
+            <div class="card" id="article1">
+                <p class="name"><b>Welcome to the Irvington Daily</b></p>
+                <p class="authordate"><i>By Joshua Chang | October 1, 2017</i></p>
+                <p class="text">I like to eat pie in the sky so go eat a lie. Hi, I'm a guy who flew too high and then died. When is next period again?</p>
+            </div>
+        </a>
+        <a href="https://www.google.com">
+            <div class="card" id="article2">
+                <p class="name"><b>Welcome to the Irvington Daily</b></p>
+                <p class="authordate"><i>By Joshua Chang | October 1, 2017</i></p>
+                <p class="text">I like to eat pie in the sky so go eat a lie. Hi, I'm a guy who flew too high and then died. When is next period again?</p>
+            </div>
+        </a>
+        <a href="https://www.google.com">
+            <div class="card" id="article3">
+                <p class="name"><b>Welcome to the Irvington Daily</b></p>
+                <p class="authordate"><i>By Joshua Chang | October 1, 2017</i></p>
+                <p class="text">I like to eat pie in the sky so go eat a lie. Hi, I'm a guy who flew too high and then died. When is next period again?</p>
+            </div>
+        </a>
+        <a href="https://www.google.com">
+            <div class="card" id="article4">
+                <p class="name"><b>Welcome to the Irvington Daily</b></p>
+                <p class="authordate"><i>By Joshua Chang | October 1, 2017</i></p>
+                <p class="text">I like to eat pie in the sky so go eat a lie. Hi, I'm a guy who flew too high and then died. When is next period again?</p>
+            </div>
+        </a>
     </body>
 </html>
 
