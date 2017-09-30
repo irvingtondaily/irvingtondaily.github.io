@@ -84,12 +84,12 @@
                 background-color: #EEEEEE;
             }
             #sub {
-                position: relative;
+                margin: auto;
+                padding-left: 10px;
+                padding-right: 10px;
                 font-family: "Cabin", sans-serif;
-                font-size: 152%;
+                font-size: 170%;
                 text-align: center;
-                padding: 7%;
-                margin-bottom: 60px;
             }
             .main {
                 position: absolute;
@@ -99,6 +99,16 @@
                 position: absolute;
                 font-family: "Cabin", sans-serif;
             }
+            .container {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         </style>
     </head>
     <body>
@@ -107,7 +117,9 @@
             <div id="footershadow" class="shadow"></div>
         </div>
         <div id="subTitle">
-            <p id="sub"><b>ALL ACCURATE • ALL NEWS • ALL IRVINGTON</b></p>
+            <div class="container">
+                <p id="sub"><b>ALL ACCURATE • ALL NEWS • ALL IRVINGTON</b></p>
+            </div>
         </div>
         <div id="undersubtitle" class="shadow"></div>
         <div id="title">
