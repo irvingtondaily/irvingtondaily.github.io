@@ -84,11 +84,12 @@
             }
             .main {
                 margin: auto;
-                position: absolute;
                 font-family: "Cabin", sans-serif;
                 font-size: 330%;
-                padding: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
                 text-align: center;
+                display: inline-block;
             }
             #main-black {
                 position: absolute;
@@ -96,6 +97,8 @@
                 margin-left: 5px;
                 height: 100px;
                 width: 100%;
+            }
+            #black {
                 color: black;
             }
             #main-dark {
@@ -104,6 +107,8 @@
                 margin-left: 0px;
                 height: 100px;
                 width: 100%;
+            }
+            #dark {
                 color: #666666;
             }
             #main-white {
@@ -112,6 +117,8 @@
                 margin-left: -5px;
                 height: 100px;
                 width: 100%;
+            }
+            #white {
                 color: white;
             }
             .container {
@@ -123,6 +130,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                text-align: -webkit-center;
+                justify-content: -webkit-center;
+                align-items: -webkit-center;
             }
             #heading {
                 position: absolute;
@@ -137,7 +147,6 @@
                 color: black;
                 opacity: 0.87;
                 margin: auto;
-                position: absolute;
             }
             .card {
                 position: relative;
@@ -190,6 +199,7 @@
             #container {
                 width: 101%;
                 text-align: center;
+                text-align: -webkit-center;
             }
             .card-pad {
                 padding: 10px;
@@ -203,20 +213,20 @@
             <li class="select"><a href="https://www.google.com"><b>ABOUT</b></a></li>
             <li class="select"><a href="https://www.google.com"><b>TOPICS</b></a></li>
         </ul>
-        <div id="title" >
+        <div id="title">
             <div id="main-black">
                 <div class="container">
-                    <p class="main"><b> THE IRVINGTON DAILY</b></p>
+                    <p class="main" id="black"><b> THE IRVINGTON DAILY</b></p>
                 </div>
             </div>
             <div id="main-dark">
                 <div class="container">
-                    <p class="main"><b>THE IRVINGTON DAILY</b></p>
+                    <p class="main" id="dark"><b>THE IRVINGTON DAILY</b></p>
                 </div>
             </div>
             <div id="main-white">
                 <div class="container">
-                    <p class="main"><b>THE IRVINGTON DAILY</b></p>
+                    <p class="main" id="white"><b>THE IRVINGTON DAILY</b></p>
                 </div>
             </div>
         </div>
