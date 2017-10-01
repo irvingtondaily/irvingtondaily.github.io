@@ -1,4 +1,331 @@
 <!DOCTYPE html>
 <html>
-	
+    <head>
+        <meta charset="utf-8">
+        <title>The Irvington Daily - Topics</title>
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #navbar {
+                z-index: 1;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #1B5E20;
+                position: fixed;
+                width: 101%;
+                margin-top: -10px;
+                margin-left: -10px;
+                box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+            }
+            #navbar li {
+                float: left;
+            }
+            #navbar li a {
+                display: block;
+                display: -webkit-block;
+                color: white;
+                text-align: -webkit-center -webkit-center;
+                text-align: center center;
+                padding: 20px;
+                text-decoration: none;
+                font-family: "Cabin", sans-serif;
+            }
+            .select a:hover {
+                background-color: #2E7D32;
+                box-shadow: 0 2px 2px rgba(0,0,0,.26);
+            }
+            #footer {
+                margin-top: 60px;
+                margin-left: 0px;
+                width: 100%;
+                height: 101px;
+                background-color: #4CAF50;
+                position: relative;
+                box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+                
+                font-family: "Cabin", sans-serif;
+            }
+            .footertext {
+                padding: 24px;
+                margin: auto;
+                margin-left: 13px;
+                margin-top: -33px;
+                color: white;
+                font-size: 100%;
+            }
+            body {
+                background-color: #EEEEEE;
+            }
+            #sub {
+                margin: auto;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: "Cabin", sans-serif;
+                font-size: 158%;
+                text-align: center;
+                text-align: -webkit-center;
+            }
+            .container {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                display: -webkit-flex;
+                justify-content: center;
+                align-items: center;
+                text-align: -webkit-center;
+                justify-content: -webkit-center;
+                align-items: -webkit-center;
+            }
+            #heading {
+                position: absolute;
+                margin-top: 53px;
+                margin-left: -10px;
+                width: 100%;
+                height: 100px;
+                font-family: "Cabin", sans-serif;
+                font-size: 330%;
+            }
+            #topics {
+                color: black;
+                opacity: 0.87;
+                margin: auto;
+            }
+            .card {
+                position: relative;
+                width: 250px;
+                height: 270px;
+                padding-top: 0px;
+                background-color: white;
+                font-family: "Cabin", sans-serif;
+                border-radius: 3px;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+                display: -webkit-inline-block;
+                display: inline-block;
+                text-align: left;
+            }
+            .name {
+                font-size: 161%;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-top: 20px;
+                color: black;
+                opacity: 1;
+                text-align: center;
+                text-align: -webkit-center;
+            }
+            .authordate {
+                font-size: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 7px;
+                opacity: 0.87;
+                color: black;
+            }
+            .text {
+                font-size: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 10px;
+                color: black;
+                opacity: 1;
+            }
+            .img {
+                position: relative;
+                margin-top: 0px;
+                border-radius: 3px;
+                width: 250px;
+            }
+            .card:hover {
+                box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+            }
+            .card:active {
+                background-color: #E0E0E0;
+            }
+            #body {
+                position: absolute;
+                margin-top: 145px;
+                margin-left: -13px;
+                width: 101%;
+            }
+            #container {
+                width: 101%;
+                text-align: center;
+                text-align: -webkit-center;
+            }
+            .card-pad {
+                padding: 10px;
+                display: inline-block;
+                display: -webkit-inline-block;
+            }
+            #card1 {
+                position: relative;
+                margin-top: 46px;
+            }
+            #card2 {
+                position: relative;
+                margin-top: 49px;
+            }
+            #card3 {
+                position: relative;
+                margin-top: 38px;
+            }
+            #card4 {
+                position: relative;
+                margin-top: 49px;
+            }
+            #card5 {
+                position: relative;
+                margin-top: 44px;
+            }
+            #card6 {
+                position: relative;
+                margin-top: 49px;
+            }
+            #card7 {
+                position: relative;
+                margin-top: 49px;
+            }
+            #card8 {
+                position: relative;
+                margin-top: 67px;
+            }
+            #card9 {
+                position: relative;
+                margin-top: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="navbar">
+            <li class="select"><a href="https://irvingtondaily.github.io"><b>HOME</b></a></li>
+            <li class="select"><a href="https://irvingtondaily.github.io/topics"><b>TOPICS</b></a></li>
+            <li class="select"><a href="https://irvingtondaily.github.io/subscribe"><b>SUBSCRIBE</b></a></li>
+        </ul>
+        <div id="heading">
+            <div class="container">
+                <p id="topics">TOPICS</p>
+            </div>
+        </div>
+        <div id="body">
+            <div id="container">
+                <div class="card-pad">
+                    <a href="/all" class="cardlink">
+                        <div class="card">
+                            <img class="img" src="https://www.kasandbox.org/programming-images/landscapes/beach-waves-at-sunset.png">
+                            <div id="card1">
+                                <div class="container">
+                                    <p class="name"><b>ALL</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-pad">
+                    <a href="/events" class="cardlink">
+                        <div class="card">
+                            <img class="img" src="https://www.kasandbox.org/programming-images/landscapes/mountain_matterhorn.png">
+                            <div id="card2">
+                                <div class="container">
+                                    <p class="name"><b>EVENTS</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-pad">
+                    <a href="/education" class="cardlink">
+                        <div class="card">
+                            <img class="img" src="https://www.kasandbox.org/programming-images/animals/kangaroos.png">
+                            <div id="card3">
+                                <div class="container">
+                                    <p class="name"><b>EDUCATION</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-pad">
+                    <a href="/environment" class="cardlink">
+                        <div class="card">
+                            <img class="img" src="https://www.kasandbox.org/programming-images/landscapes/lava.png">
+                            <div id="card4">
+                                <div class="container">
+                                    <p class="name"><b>ENVIRONMENT</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-pad">
+                    <a href="/politics" class="cardlink">
+                        <div class="card">
+                            <img class="img" src="https://www.kasandbox.org/programming-images/food/bananas.png">
+                            <div id="card5">
+                                <div class="container">
+                                    <p class="name"><b>POLITICS</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-pad">
+                    <a href="/buisiness" class="cardlink">
+                        <div class="card">
+                            <img class="img" src="https://www.kasandbox.org/programming-images/food/chocolates.png">
+                            <div id="card6">
+                                <div class="container">
+                                    <p class="name"><b>BUISINESS</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-pad">
+                    <a href="/arts" class="cardlink">
+                        <div class="card">
+                            <img class="img" src="https://www.kasandbox.org/programming-images/animals/shark.png">
+                            <div id="card7">
+                                <div class="container">
+                                    <p class="name"><b>ARTS</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-pad">
+                    <a href="/opinion" class="cardlink">
+                        <div class="card">
+                            <img class="img" src="https://www.kasandbox.org/programming-images/landscapes/crop-circle.png">
+                            <div id="card8">
+                                <div class="container">
+                                    <p class="name"><b>OPINION</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-pad">
+                    <a href="/photos" class="cardlink">
+                        <div class="card">
+                            <img class="img" src="https://www.kasandbox.org/programming-images/landscapes/clouds-from-plane.png">
+                            <div id="card9">
+                                <div class="container">
+                                    <p class="name"><b>PHOTOS</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="footer">
+            <p class="footertext">© 2017 The Irvington Daily</p>
+            <p class="footertext">Contact: irvingtondaily@gmail.com</p>
+        </div>
+        </div>
+    </body>
 </html>
