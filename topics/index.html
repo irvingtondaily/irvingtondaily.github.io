@@ -106,7 +106,7 @@
                 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
                 display: -webkit-inline-block;
                 display: inline-block;
-                text-align: left;
+                vertical-align: top;
             }
             .name {
                 font-size: 161%;
@@ -118,14 +118,6 @@
                 text-align: center;
                 text-align: -webkit-center;
             }
-            .authordate {
-                font-size: 100%;
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-top: 7px;
-                opacity: 0.87;
-                color: black;
-            }
             .text {
                 font-size: 100%;
                 padding-left: 10px;
@@ -135,7 +127,6 @@
                 opacity: 1;
             }
             .img {
-                position: relative;
                 margin-top: 0px;
                 border-radius: 3px;
                 width: 250px;
@@ -158,9 +149,12 @@
                 text-align: -webkit-center;
             }
             .card-pad {
-                padding: 10px;
+                padding: 6px;
                 display: inline-block;
                 display: -webkit-inline-block;
+            }
+            #footerlink {
+                color: white;
             }
             #card1 {
                 position: relative;
@@ -214,9 +208,11 @@
         <div id="body">
             <div id="container">
                 <div class="card-pad">
-                    <a href="/all" class="cardlink">
+                    <a href="/all" class="card-pad">
                         <div class="card">
-                            <img class="img" src="https://www.kasandbox.org/programming-images/landscapes/beach-waves-at-sunset.png">
+                            <div class="imgdiv">
+                                <img class="img" src="https://www.kasandbox.org/programming-images/landscapes/beach-waves-at-sunset.png">
+                            </div>
                             <div id="card1">
                                 <div class="container">
                                     <p class="name"><b>ALL</b></p>
@@ -228,7 +224,9 @@
                 <div class="card-pad">
                     <a href="/events" class="cardlink">
                         <div class="card">
-                            <img class="img" src="https://www.kasandbox.org/programming-images/landscapes/mountain_matterhorn.png">
+                            <div class="imgdiv">
+                                <img class="img" src="https://www.kasandbox.org/programming-images/landscapes/mountain_matterhorn.png">
+                            </div>
                             <div id="card2">
                                 <div class="container">
                                     <p class="name"><b>EVENTS</b></p>
@@ -324,8 +322,9 @@
             </div>
             <div id="footer">
             <p class="footertext">© 2017 The Irvington Daily</p>
-            <p class="footertext">Contact: irvingtondaily@gmail.com</p>
+            <p class="footertext">Contact: <a href="https://irvingtondaily.github.io/contact" id="footerlink"> irvingtondaily@gmail.com</a></p>
         </div>
         </div>
     </body>
 </html>
+
