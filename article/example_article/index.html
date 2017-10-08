@@ -1,14 +1,249 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-        	<title>REDIRECTING...</title>
-        	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-        	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-        	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="refresh" content="0; url=/topics/all"/>
-	</head>
-	<body>
-		<p><a href="/topics/all">Redirect</a></p>
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <title>The Irvington Daily - Example Article</title>
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            h1 {
+                margin: auto;
+            }
+            h2 {
+                margin: auto;
+            }
+            h3 {
+                margin: auto;
+            }
+            h4 {
+                margin: auto;
+            }
+            h5 {
+                margin: auto;
+            }
+            h6 {
+                margin: auto;
+            }
+            #navbar {
+                z-index: 1;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #1B5E20;
+                position: fixed;
+                width: 101%;
+                margin-top: -10px;
+                margin-left: -10px;
+                box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+            }
+            #navbar li {
+                float: left;
+            }
+            #navbar li a {
+                display: block;
+                display: -webkit-block;
+                color: white;
+                text-align: -webkit-center -webkit-center;
+                text-align: center center;
+                padding: 20px;
+                text-decoration: none;
+                font-family: "Cabin", sans-serif;
+            }
+            .select a:hover {
+                background-color: #2E7D32;
+                box-shadow: 0 2px 2px rgba(0,0,0,.26);
+            }
+            #footer {
+                margin-top: 42px;
+                margin-left: -10px;
+                width: 106%;
+                margin-bottom: -40px;
+                height: 101px;
+                background-color: #4CAF50;
+                position: relative;
+                box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+                
+                font-family: "Cabin", sans-serif;
+            }
+            .footertext {
+                padding: 0px;
+                margin: auto;
+                margin-left: 34px;
+                margin-top: 20px;
+                color: white;
+                font-size: 100%;
+                text-align: left;
+            }
+            body {
+                background-color: #EEEEEE;
+            }
+            #sub {
+                margin: auto;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: "Cabin", sans-serif;
+                font-size: 158%;
+                text-align: center;
+                text-align: -webkit-center;
+            }
+            .container {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                display: -webkit-flex;
+                justify-content: center;
+                align-items: center;
+                text-align: -webkit-center;
+                justify-content: -webkit-center;
+                align-items: -webkit-center;
+            }
+            #heading {
+                position: relative;
+                width: 100%;
+                font-family: "Cabin", sans-serif;
+                font-size: 330%;
+                text-align: center;
+                text-align: -webkit-center;
+            }
+            .card {
+                position: relative;
+                width: 250px;
+                height: 300px;
+                background-color: white;
+                font-family: "Cabin", sans-serif;
+                border-radius: 3px;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+                padding: 10px;
+                display: -webkit-inline-block;
+                display: inline-block;
+                text-align: left;
+            }
+            .name {
+                font-size: 136%;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: -5px;
+                color: black;
+                opacity: 1;
+            }
+            .authordate {
+                font-size: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 4px;
+                opacity: 0.87;
+                color: black;
+            }
+            .text {
+                font-size: 100%;
+                padding: 15px;
+                color: black;
+                opacity: 1;
+            }
+            .card:hover {
+                box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+            }
+            .card:active {
+                background-color: #E0E0E0;
+            }
+            #body {
+                position: relative;
+                width: 100%;
+                margin-left: -4px;
+                text-align: center;
+                text-align: -webkit-center;
+            }
+            .card-pad {
+                padding: 10px;
+                display: inline-block;
+                display: -webkit-inline-block;
+            }
+            #footerlink {
+                color: white;
+            }
+            #article {
+                position: relative;
+                width: 80%;
+                margin-left: 8px;
+                margin-top: -24px;
+                background-color: white;
+                font-family: "Cabin", sans-serif;
+                border-radius: 3px;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+                padding: 15px;
+                display: -webkit-inline-block;
+                display: inline-block;
+                text-align: left;
+            }
+            section.content {
+                flex: 1;
+            }
+            .flex-container {
+                display: flex;
+                flex-direction: column;
+                display: -webkit-flex;
+                flex-direction: -webkit-column;
+            }
+            #author {
+                position: relative;
+                width: 100%;
+                font-family: "Cabin", sans-serif;
+                font-size: 40%;
+                text-align: center;
+                text-align: -webkit-center;
+            }
+            #filler {
+                height: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="navbar">
+            <li class="select"><a href="/"><b>HOME</b></a></li>
+            <li class="select"><a href="/topics"><b>TOPICS</b></a></li>
+            <li class="select"><a href="/subscribe"><b>SUBSCRIBE</b></a></li>
+        </ul>
+        <div id="filler"></div>
+        <div id="heading">
+            <p id="topics">EXAMPLE ARTICLE</p>
+        </div>
+        <div id="body" class="flex-container">
+            <div class="content" id="article">
+                <section class="text">
+
+<h3>Preamble</h3>
+<br/>
+<b>We the People</b> of the United States, in Order to form a more  perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.
+<br/>
+<br/>
+<br/>
+<h3>Article I (Article 1 - Legislative)</h3>
+<br/>
+<h4>Section 1</h4>
+All legislative Powers herein granted shall be vested in a Congress of the United States, which shall consist of a Senate and House of Representatives.
+<br/>
+<br/>
+<h4>Section 2</h4>
+<b>1:</b> The House of Representatives shall be composed of Members chosen every second Year by the People of the several States, and the Electors in each State shall have the Qualifications requisite for Electors of the most numerous Branch of the State Legislature.
+<br/>
+<b>2:</b> No Person shall be a Representative who shall not have attained to the Age of twenty five Years, and been seven Years a Citizen of the United States, and who shall not, when elected, be an Inhabitant of that State in which he shall be chosen.
+<br/>
+<b>3:</b> Representatives and direct Taxes shall be apportioned among the several States which may be included within this Union, according to their respective Numbers, which shall be determined by adding to the whole Number of free Persons, including those bound to Service for a Term of Years, and excluding Indians not taxed, three fifths of all other Persons.2  The actual Enumeration shall be made within three Years after the first Meeting of the Congress of the United States, and within every subsequent Term of ten Years, in such Manner as they shall by Law direct. The Number of Representatives shall not exceed one for every thirty Thousand, but each State shall have at Least one Representative; and until such enumeration shall be made, the State of New Hampshire shall be entitled to chuse three, Massachusetts eight, Rhode-Island and Providence Plantations one, Connecticut five, New-York six, New Jersey four, Pennsylvania eight, Delaware one, Maryland six, Virginia ten, North Carolina five, South Carolina five, and Georgia three.
+<br/>
+<b>4:</b> When vacancies happen in the Representation from any State, the Executive Authority thereof shall issue Writs of Election to fill such Vacancies.
+<br/>
+<b>5:</b> The House of Representatives shall chuse their Speaker and other Officers; and shall have the sole Power of Impeachment.
+</section>
+            </div>
+            <div id="footer">
+                <p class="footertext">© 2017 The Irvington Daily</p>
+                <p class="footertext">Contact:   <a id="footerlink" href="https://irvingtondaily.github.io/contact">irvingtondaily@gmail.com</a></p>
+            </div>
+        </div>
+    </body>
 </html>
