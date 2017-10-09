@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>The Irvington Daily - Home</title>
+        <title>The Irvington Daily - All</title>
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             #navbar {
                 z-index: 1;
@@ -37,14 +37,6 @@
                 background-color: #2E7D32;
                 box-shadow: 0 2px 2px rgba(0,0,0,.26);
             }
-            #title {
-                margin-top: 48px;
-                margin-left: -10px;
-                width: 101%;
-                height: 227px;
-                background-color: #4CAF50;
-                position: absolute;
-            }
             #footer {
                 margin-top: 60px;
                 margin-left: 0px;
@@ -64,21 +56,8 @@
                 color: white;
                 font-size: 100%;
             }
-            #subTitle {
-                margin-top: 275px;
-                margin-left: -10px;
-                width: 101%;
-                height: 101px;
-                background-color: #A5D6A7;
-                position: absolute;
-                box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-		vertical-align: -webkit-middle;
-		vertical-align: middle;
-            }
             body {
                 background-color: #EEEEEE;
-		vertical-align: -webkit-middle;
-		vertical-align: middle;
             }
             #sub {
                 margin: auto;
@@ -88,50 +67,6 @@
                 font-size: 158%;
                 text-align: center;
                 text-align: -webkit-center;
-		vertical-align: -webkit-middle;
-		vertical-align: middle;
-            }
-            .main {
-                font-family: "Cabin", sans-serif;
-                font-size: 330%;
-                padding-left: 15px;
-                padding-right: 15px;
-                text-align: -webkit-center;
-                text-align: center;
-                display: inline-block;
-                display: -webkit-inline-block;
-		vertical-align: -webkit-middle;
-		vertical-align: middle;
-            }
-            #main-black {
-                position: absolute;
-                margin-top: 70px;
-                margin-left: 5px;
-                height: 100px;
-                width: 100%;
-            }
-            #black {
-                color: black;
-            }
-            #main-dark {
-                position: absolute;
-                margin-top: 65px;
-                margin-left: 0px;
-                height: 100px;
-                width: 100%;
-            }
-            #dark {
-                color: #666666;
-            }
-            #main-white {
-                position: absolute;
-                margin-top: 60px;
-                margin-left: -5px;
-                height: 100px;
-                width: 100%;
-            }
-            #white {
-                color: white;
             }
             .container {
                 position: absolute;
@@ -139,24 +74,22 @@
                 right: 0;
                 bottom: 0;
                 left: 0;
-		text-align: center;
-		text-align: -webkit-center;
-		vertical-align: -webkit-middle;
-		vertical-align: middle;
+                display: flex;
+                display: -webkit-flex;
+                justify-content: center;
+                align-items: center;
+                text-align: -webkit-center;
+                justify-content: -webkit-center;
+                align-items: -webkit-center;
             }
             #heading {
                 position: absolute;
-                margin-top: 403px;
+                margin-top: 53px;
                 margin-left: -10px;
                 width: 100%;
                 height: 100px;
                 font-family: "Cabin", sans-serif;
                 font-size: 330%;
-            }
-            #topstories {
-                color: black;
-                opacity: 0.87;
-                margin: auto;
             }
             .card {
                 position: relative;
@@ -203,7 +136,7 @@
             }
             #body {
                 position: absolute;
-                margin-top: 515px;
+                margin-top: 145px;
                 margin-left: -13px;
                 width: 101%;
             }
@@ -224,33 +157,13 @@
     </head>
     <body>
         <ul id="navbar">
-		<li class="select"><a href="http://irvingtondaily.com/newsletter">NEWSLETTER</a></li>
+            <li class="select"><a href="/"><b>HOME</b></a></li>
+            <li class="select"><a href="/topics"><b>TOPICS</b></a></li>
+            <li class="select"><a href="/subscribe"><b>SUBSCRIBE</b></a></li>
         </ul>
-        <div id="title">
-            <div id="main-black">
-                <div class="container">
-                    <a href="http://irvingtondaily.com"><p class="main" id="black"><b>THE IRVINGTON DAILY</b></p></a>
-                </div>
-            </div>
-            <div id="main-dark">
-                <div class="container">
-                    <a href="http://irvingtondaily.com"><p class="main" id="dark"><b>THE IRVINGTON DAILY</b></p></a>
-                </div>
-            </div>
-            <div id="main-white">
-                <div class="container">
-                    <a href="http://irvingtondaily.com"><p class="main" id="white"><b>THE IRVINGTON DAILY</b></p></a>
-                </div>
-            </div>
-        </div>
-        <div id="subTitle">
-            <div class="container">
-                <p id="sub"><b>ALL ACCURATE • ALL NEWS • ALL IRVINGTON</b></p>
-            </div>
-        </div>
         <div id="heading">
             <div class="container">
-                <p id="topstories">TOP STORIES THIS WEEK</p>
+                <p id="topics">ALL</p>
             </div>
         </div>
         <div id="body">
