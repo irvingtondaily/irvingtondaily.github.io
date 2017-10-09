@@ -15,8 +15,7 @@
                 overflow: hidden;
                 background-color: #1B5E20;
                 width: 100%;
-                margin-top: -10px;
-                margin-left: -10px;
+                margin-top: -8px;
             }
             #navbar li {
                 float: left;
@@ -34,8 +33,6 @@
             #footer {
                 margin-top: 57px;
                 width: 100%;
-                margin-left: -8px;
-                margin-bottom: -8px;
                 height: 104px;
                 background-color: #4CAF50;
                 position: relative;
@@ -49,7 +46,7 @@
                 font-size: 100%;
             }
             body {
-                background-color: #EEEEEE;
+                background-color: white;
             }
             #heading {
                 text-align: center;
@@ -93,8 +90,11 @@
                 color: black;
                 opacity: 1;
             }
-            #body {
+            .body {
+                margin-top: -53px;
                 width: 100%;
+                background-color: #EEEEEE;
+                margin-left: -8px;
             }
             #container {
                 width: 100%;
@@ -102,9 +102,12 @@
                 text-align: -webkit-center;
             }
             .card-pad {
-                padding: 10px;
+                padding: 15px;
                 display: inline-block;
                 display: -webkit-inline-block;
+            }
+            #top-card-pad {
+                padding-top: 58px;
             }
             #footerlink {
                 color: white;
@@ -116,16 +119,18 @@
         </style>
     </head>
     <body>
-        <ul id="navbar">
-            <li class="select"><a href="http://irvingtondaily.com/"><b>NEWSLETTER</b></a></li>
-        </ul>
-        <div id="filler"></div>
-        <div id="heading">
-            <p id="topics">IRVINGTON DAILY NEWSLETTER - 10/14/17</p>
+        <div class="body">
+            <ul id="navbar">
+                <li class="select"><a href="http://irvingtondaily.com/"><b>NEWSLETTER</b></a></li>
+            </ul>
+            <div id="filler"></div>
+            <div id="heading">
+                <p id="topics">IRVINGTON DAILY NEWSLETTER - 10/14/17</p>
         </div>
-        <div id="body">
+        </div>
+        <div class="body">
             <div id="container">
-                <div class="card-pad">
+                <div class="card-pad" id="top-card-pad">
                     <a href="/article/example_article" class="cardlink">
                         <div class="card" id="article1">
                             <p class="name"><b>Welcome to the Irvington Daily</b></p>
