@@ -8,18 +8,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             #navbar {
+                z-index: 1;
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
                 background-color: #1B5E20;
+                position: absolute;
                 width: 100%;
-                margin-top: -8px;
-            }
-            #navbar li {
-                float: left;
             }
             #navbar li a {
+                display: block;
+                display: -webkit-block;
                 color: white;
                 text-align: -webkit-center -webkit-center;
                 text-align: center center;
@@ -29,7 +29,7 @@
             }
             #footer {
                 margin-top: 57px;
-                width: 100%;
+                width: 104%;
                 height: 104px;
                 background-color: #4CAF50;
                 position: relative;
@@ -47,7 +47,7 @@
             }
             #heading {
                 text-align: center;
-                width: 100%;
+                width: 104%;
                 font-family: "Cabin", sans-serif;
                 font-size: 330%;
             }
@@ -88,8 +88,8 @@
                 opacity: 1;
             }
             .body {
-                margin-top: -53px;
-                width: 100%;
+                margin-top: -100px;
+                width: 104%;
                 background-color: #EEEEEE;
                 margin-left: -8px;
             }
@@ -112,6 +112,9 @@
             #topics {
                 color: black;
                 opacity: 1;
+            }
+            #filler {
+                position: absolute;
             }
         </style>
     </head>
